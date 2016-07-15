@@ -1,14 +1,57 @@
+body, html { 
+    overflow-x: hidden !important; 
+    overflow-y: auto;
+    background-color: #f9f9f9;
+}
+
+#canvasContainer{
+	position:relative;
+    margin:0px;
+    padding:0px;
+}
+
+.centwrapper{
+    position: absolute;
+    width: 100%;
+}
+
+.cent{
+    position: relative;
+    margin: auto;
+    width: 100%;
+}
+
+.cent h1{
+    margin: auto;
+    width: 300px;
+}
+
+.cent p{
+	padding-top: 24px;
+	margin:auto;
+}
+
+.title-italic{
+	font-family: 'Lato', sans-serif;
+	font-weight: bold;
+	font-style: italic;
+	font-size: 52px;
+}
 /* Style for our header texts
 * --------------------------------------- */
 h1{
-    font-size: 5em;
+    font-size: 40px;
     font-family: arial,helvetica;
     color: #fff;
     margin:0;
 }
-.intro p{
-    color: #fff;
+
+.intro h1 {
+    width: 28%;
+    margin: auto;
 }
+
+
 /* Centered texts in each section
 * --------------------------------------- */
 .section{
@@ -18,4 +61,31 @@ h1{
 * --------------------------------------- */
 #infoMenu li a {
     color: #fff;
+}
+
+/*==========  Media Queries (Non-Mobile First)  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+
+}
+
+/* Extra Small Devices, Phones */ 
+@media only screen and (max-width : 480px) {
+
+}
+
+/* Custom, iPhone Retina */ 
+@media only screen and (max-width : 320px) {
+    
 }
