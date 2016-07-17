@@ -5,7 +5,7 @@ body, html {
 }
 
 #canvasContainer{
-	position:relative;
+    position:relative;
     margin:0px;
     padding:0px;
 }
@@ -27,16 +27,99 @@ body, html {
 }
 
 .cent p{
-	padding-top: 24px;
-	margin:auto;
+    padding-top: 24px;
+    margin:auto;
 }
 
 .title-italic{
-	font-family: 'Lato', sans-serif;
-	font-weight: bold;
-	font-style: italic;
-	font-size: 52px;
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 52px;
 }
+
+.imageWrapper{
+    background-color:purple;
+}
+
+
+.imageWrapper img{
+    overflow: hidden;
+    display:block;
+    margin: auto;
+    width:auto;
+    max-height:750px;
+}
+
+
+
+.left{
+    float:left;
+    width:50%;
+}
+.right{
+    float: right;
+    width:50%;
+}
+
+.textbox{
+    box-sizing: border-box;
+}
+.textboxright{
+    padding: 0px 80px 0px 40px;
+}
+
+.textboxleft{
+    padding: 0px 40px 0px 80px;
+}
+
+.tcenter{
+    text-align: center;
+}
+
+.tleft{
+    text-align: left;
+}
+
+.buttonContainer{
+}
+/*Button Styling*/
+.button {
+    background-color: rgba(255, 255, 255, 0);
+    border: 2px solid #000000;
+    color: #000000;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font-family: 'Josefin Sans', sans-serif;
+    margin-top: 6px;
+    -webkit-transition-duration: 0.32s; /* Safari */
+    transition-duration: 0.32s;
+    cursor: pointer;
+    border-radius:8px;
+    box-shadow: 0 2px #222222;
+    width:48%;
+
+}
+
+
+.button:hover {
+    background-color: rgba(231, 231, 231, 0);
+    color: #4CAF50;
+    border: 2px solid #4CAF50;
+}
+
+.button:active {
+    background-color: #4CAF50;
+    color:white;
+    box-shadow: none;
+    transform: translateY(2px);
+}
+
+
+
 /* Style for our header texts
 * --------------------------------------- */
 h1{
@@ -51,11 +134,24 @@ h1{
     margin: auto;
 }
 
+.textbox h1{
+    font-family: 'Lato', sans-serif;
+    font-weight: 800;
+    font-size: 42px;
+}
 
-/* Centered texts in each section
-* --------------------------------------- */
-.section{
-    text-align:center;
+.textbox h2{
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+
+.textbox p{
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
 }
 /* Bottom menu
 * --------------------------------------- */
@@ -72,16 +168,41 @@ h1{
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px) {
-
+    .left{
+    float:left;
+    width:100%;
+    }
+    .right{
+    float: right;
+    width:100%;
+    }
+    .imageWrapper img{
+        max-width: 100%;
+        max-height: 510px;
+    }
 }
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px) {
-
+    .textbox{
+        box-sizing: border-box;
+        padding: 0px 30px;
+    }
 }
 
 /* Extra Small Devices, Phones */ 
 @media only screen and (max-width : 480px) {
+/*One Col on Phones*/
+    .textbox{
+        box-sizing: border-box;
+        padding: 0px 20px;
+    }
+    .imageWrapper img{
+        max-width: 100%;
+        max-height: 340px;
+    }
+
+
 
 }
 
